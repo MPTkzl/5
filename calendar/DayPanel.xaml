@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="calendar.DayPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:calendar"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="50">
+    <Grid>
+        <Button x:Name="DataName" Background="{x:Null}" BorderBrush="#FF207B7B" Height="50" Width="50" Content="1" FontFamily="FZShuTi" FontSize="18" Foreground="#FF207B7B" />
+    </Grid>
+</UserControl>

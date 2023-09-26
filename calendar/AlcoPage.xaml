@@ -1,0 +1,30 @@
+﻿<Page x:Class="calendar.AlcoPage"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:calendar"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="600" 
+      Title="AlcoPage" Background="White" >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button
+            Grid.Row="0"  
+            Style="{StaticResource MaterialDesignIconForegroundButton}" Foreground="#FF207B7B" HorizontalAlignment="Left" Click="Button_Click">
+            <materialDesign:PackIcon
+                Kind="ArrowBack" />
+        </Button>
+        <TextBlock Text="Что  вы  сегодня  пили?" FontFamily="FZShuTi" FontSize="16" VerticalAlignment="Center" Margin="5" Grid.Row="1"/>
+        <ListBox x:Name="AlcoList" Grid.Row="2" Margin="5"/>
+        <Button Background="#FF207B7B" Grid.Row="3" Margin="5" Content="Сохранить  и  выйти" BorderBrush="#FF207B7B" FontFamily="FZShuTi" FontSize="16" />
+        <Frame x:Name="frame" Grid.RowSpan="4"/>
+    </Grid>
+</Page>
